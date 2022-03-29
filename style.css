@@ -224,5 +224,24 @@ section {
 
 .carousel-itm img {
   width: 20%;
+  border-radius: 25px;
+}
+.danger{
+	background-color: var(--danger);
+	padding: 150px 10px;
+	border-radius: 25px;
+}
+.danger-input{
+	background-color: var(--danger);
+	border: 1px solid white;
+	border-radius: 7px 0 0 7px;
+	padding: 5px;
+}
+.danger-icon{
+	border: 1px solid;
+	border-left-color: var(--danger);
+	font-size: 1.5rem;
+	padding: 5px;
+	border-radius: 0 7px 7px 0;
 }
 
