@@ -72,10 +72,12 @@ body{
 	padding: .8rem 2rem;
 	border-radius: .5rem;
 	width: fit-content;
+	border: 1px solid white;
 	
 }
 .mybtn-dark{
-	background-color: var(--dark);	
+	background-color: var(--dark);
+	border: 1px solid transparent;	
 }
 section{
 	margin: 0 0 10rem 0;
@@ -102,13 +104,31 @@ section{
 }
 
 
+
 .nav-itms a{ 
-	color: var(--dark);
+	color: white;
 	text-decoration: none;	
+	transition: all 500ms ease;
+}
+.nav-itms a:hover{
+	color: #bdbdbd;
 }
 /* navigation ends----------- */
 
 /* hero starts-------------- */
+
+.bnnr::after{
+	content: "";
+	width: 55%;
+	height: 70vh;
+	background: var(--danger);
+	border-radius: 5% 0% 15% 85% / 20% 0% 15% 80% ;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	
+}
 .container-fluid{
 	height: 100vh;
 }
@@ -119,9 +139,7 @@ section{
 	font-weight: 300;
 }
 
-.hero-img{
-	width: 50%;
-}
+
 /* hero ends============== */
 
 .feature i{
@@ -132,4 +150,15 @@ section{
 
 .tips i{
 	color: var(--danger);
+}
+
+
+.light-bg{
+	background-color:antiquewhite;
+	border-radius: 0% 0% 50% 50% / 85% 0% 16% 15% ;
+}
+
+
+.carousel-itm img{
+	width: 20%;
 }
